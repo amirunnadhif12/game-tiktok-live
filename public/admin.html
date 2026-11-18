@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Tebak-Tebakan Live TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font-display: 'Fredoka', 'Nunito', sans-serif;
+      --font-body: 'Nunito', sans-serif;
+
+      --wood-light: #b68452;
+      --wood-mid: #966437;
+      --wood-dark: #6e4520;
+      --wood-border: #553314;
+
+      --espresso: #44270f;
+      --muted: #8a6440;
+      --card-bg: #fffdf7;
+      --card-border: #f5d298;
+      --card-lip: #d6a76c;
+
+      --amber: #ffb830;
+      --amber-lip: #d4860b;
+      --green: #2ee59d;
+      --green-lip: #16a36b;
+      --coral: #ff5e7e;
+      --coral-lip: #c73251;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--espresso);
+      min-height: 100vh;
+      padding: 20px 24px 36px;
+      /* Warm checkerboard inspired by reference image */
+      background-color: #f3a133;
+      background-image:
+        linear-gradient(45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%);
+      background-size: 64px 64px;
+      background-position: 0 0, 0 32px, 32px -32px, -32px 0;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    /* Hanging Wooden Header */
+    .wood-header-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .wood-nail {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #ffd29d, #8c5220);
+      border: 2px solid #4d290a;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+      z-index: 2;
+    }
+
+    .wood-rope {
+      width: 260px;
+      max-width: 60%;
+      height: 18px;
+      margin-top: -5px;
+      border-left: 4px solid #8f5e30;
+      border-right: 4px solid #8f5e30;
+      transform: perspective(120px) rotateX(28deg);
+    }
+
+    header.wood-plaque {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 24px;
+      border-radius: 22px;
+      background:
+        repeating-linear-gradient(
+          3deg,
+          rgba(255, 255, 255, 0.04) 0px,
+          rgba(255, 255, 255, 0.04) 3px,
+          rgba(0, 0, 0, 0.05) 3px,
+          rgba(0, 0, 0, 0.05) 8px
+        ),
+        linear-gradient(180deg, var(--wood-light) 0%, var(--wood-mid) 55%, var(--wood-dark) 100%);
+      border: 3.5px solid var(--wood-border);
+      box-shadow:
+        inset 0 2px 0 rgba(255, 232, 198, 0.45),
+        0 6px 0 #42240b,
+        0 14px 28px rgba(74, 39, 10, 0.35);
+      color: #ffffff;
+    }
+
+    header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.5vw, 28px);
+      color: #ffffff;
+      text-shadow: 0 3px 0 #4f2c0e;
+    }
+
+    header p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffefd2;
+      margin-top: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Grid & Chunky 3D Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .panel {
+      background: var(--card-bg);
+      border: 3px solid var(--card-border);
+      border-radius: 24px;
+      padding: 20px 22px;
+      box-shadow: 0 7px 0 var(--card-lip), 0 16px 30px rgba(92, 50, 12, 0.22);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .panel h2 {
+      font-family: var(--font-display);
+      font-size: 19px;
+      color: var(--espresso);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed #efd4a7;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px 13px;
+      border-radius: 12px;
+      border: 2px solid #e6c695;
+      background: #fff8eb;
+      color: var(--espresso);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    input:focus, select:focus {
+      border-color: #d98218;
+      box-shadow: 0 0 0 3px rgba(255, 184, 48, 0.28);
+    }
+
+    /* Chunky 3D Game Buttons */
+    button, .btn-link {
+      padding: 10px 16px;
+      border-radius: 14px;
+      border: none;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    button:active, .btn-link:active {
+      transform: translateY(3px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, #ffca4b, var(--amber));
+      color: #44270f;
+      box-shadow: 0 4px 0 var(--amber-lip);
+    }
+    .btn-primary:active { box-shadow: 0 1px 0 var(--amber-lip); }
+
+    .btn-green {
+      background: linear-gradient(180deg, #4ef0b0, var(--green));
+      color: #083d27;
+      box-shadow: 0 4px 0 var(--green-lip);
+    }
+    .btn-green:active { box-shadow: 0 1px 0 var(--green-lip); }
+
+    .btn-red {
+      background: linear-gradient(180deg, #ff7a95, var(--coral));
+      color: #ffffff;
+      box-shadow: 0 4px 0 var(--coral-lip);
+    }
+    .btn-red:active { box-shadow: 0 1px 0 var(--coral-lip); }
+
+    .btn-ghost {
+      background: #ffffff;
+      color: var(--espresso);
+      border: 2px solid #e6c695;
+      box-shadow: 0 4px 0 #d9b886;
+    }
+    .btn-ghost:active { box-shadow: 0 1px 0 #d9b886; }
+
+    .status-pill {
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      background: #f5e6cc;
+      color: var(--muted);
+      border: 1.5px solid #e2c28e;
+    }
+
+    .status-pill.connected {
+      background: #d3fbe9;
+      color: #0b6b43;
+      border-color: #5ee3ab;
+    }
+    .status-pill.connecting {
+      background: #fff0c2;
+      color: #8f5400;
+      border-color: #ffca4b;
+    }
+    .status-pill.error {
+      background: #ffe0e7;
+      color: #a81c3a;
+      border-color: #ff8aa2;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 13px;
+      border-radius: 14px;
+      background: #fff6e5;
+      border: 2px solid #f0d7ac;
+      gap: 10px;
+    }
+
+    .toggle-row span {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--espresso);
+    }
+
+    .toggle-row small {
+      display: block;
+      font-size: 11.5px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      accent-color: #e08614;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .theme-swatches {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .theme-chip {
+      padding: 7px 6px;
+      border-radius: 10px;
+      border: 2px solid #e6c695;
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .theme-chip.is-active {
+      border-color: #1e293b;
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 2.5px #ffd447, 0 4px 10px rgba(0, 0, 0, 0.28);
+    }
+
+    .question-preview {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #fff6e5;
+      border: 2px solid #f0d29c;
+      box-shadow: 0 3px 0 #dfc08d;
+    }
+
+    .question-preview .q-cat {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: #ffb830;
+      color: #44270f;
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .question-preview .q-text {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 600;
+      margin: 7px 0 8px;
+      color: var(--espresso);
+    }
+
+    .question-preview .q-ans {
+      font-size: 13px;
+      color: #0e7c4f;
+      font-weight: 900;
+    }
+
+    .chat-log {
+      max-height: 210px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding-right: 4px;
+    }
+
+    .chat-entry {
+      padding: 8px 11px;
+      border-radius: 10px;
+      background: #fff7e8;
+      border: 1.5px solid #f0d7ac;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--espresso);
+    }
+
+    .chat-entry strong { color: #c46808; }
+
+    .mini-leader {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .mini-leader-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: #ffffff;
+      border: 2px solid #f0d7ac;
+      box-shadow: 0 3px 0 #dfc08d;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--espresso);
+    }
+
+    .error-msg {
+      font-size: 12.5px;
+      color: #c72849;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wood-header-wrap">
+      <div class="wood-nail"></div>
+      <div class="wood-rope"></div>
+      <header class="wood-plaque">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="/mascots/tutu-happy.png" alt="Tutu" style="height: 54px; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));" />
+          <div>
+            <h1>🎮 ADMIN PANEL — TEBAK-TEBAKAN LIVE</h1>
+            <p>Kontrol koneksi TikTok Live, soal, maskot Tutu &amp; Piko, dan simulasi offline.</p>
+          </div>
+          <img src="/mascots/piko-cute.png" alt="Piko" style="height: 46px; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));" />
+        </div>
+        <div class="header-actions">
+          <a href="/" target="_blank" class="btn-link btn-primary">📺 Buka Overlay (9:16)</a>
+        </div>
+      </header>
+    </div>
+
+    <div class="grid">
+      <!-- 1. Koneksi TikTok Live -->
+      <section class="panel">
+        <h2>
+          <span>📡 Koneksi TikTok Live</span>
+          <span class="status-pill" id="conn-status">DISCONNECTED</span>
+        </h2>
+        <div>
+          <label for="tiktok-username">Username TikTok Target (tanpa @)</label>
+          <input type="text" id="tiktok-username" placeholder="contoh: namastreamer" />
+        </div>
+        <div class="row">
+          <button class="btn-green" id="btn-connect">🔗 Connect Live</button>
+          <button class="btn-red" id="btn-disconnect">⛔ Disconnect</button>
+        </div>
+        <div class="error-msg" id="conn-error"></div>
+
+        <h2 style="margin-top: 6px;">🎮 Mode &amp; Aturan Game</h2>
+        <div>
+          <label for="gamemode-select">Pilih Jenis Game yang Dimainkan</label>
+          <select id="gamemode-select">
+            <option value="tebak_tebakan" selected>❓ Tebak-Tebakan (120 Soal)</option>
+            <option value="hitung_cepat">⚡ Hitung Cepat (Matematika Kilat)</option>
+            <option value="sebut_kata">🔤 Sebut Kata (Kategori &amp; Huruf Awal)</option>
+            <option value="lengkapi_kalimat">🧠 Lengkapi Kalimat / Peribahasa</option>
+            <option value="benar_salah">⚖️ Benar atau Salah? (Fakta Kilat)</option>
+            <option value="battle_voting">⚔️ Battle Voting (Tim 1 vs Tim 2)</option>
+            <option value="campur">🎲 Campur Semua Game (Acak Tiap Ronde)</option>
+          </select>
+        </div>
+
+        <div class="toggle-row" style="background: #e6fff4; border-color: #5ee3ab;">
+          <div>
+            <span>✅ Mode Bebas (Tanpa Wajib Follow)</span>
+            <small>Semua penonton langsung bisa ikut jawab di komentar</small>
+          </div>
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>Auto Lanjut Soal (Timeout)</span>
+            <small>Otomatis ganti soal jika waktu habis</small>
+          </div>
+          <input type="checkbox" id="toggle-auto-advance" checked />
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>Acak Urutan Soal (Shuffle)</span>
+            <small>Nomor soal muncul acak tanpa mengulang sebelum habis</small>
+          </div>
+          <input type="checkbox" id="toggle-shuffle" checked />
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>Auto-Reconnect TikTok Live</span>
+            <small>Otomatis sambung ulang jika koneksi putus sesaat</small>
+          </div>
+          <input type="checkbox" id="toggle-auto-reconnect" checked />
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>🪟 Background Transparan (Untuk Kamera)</span>
+            <small>Matikan jika ingin menampilkan background warna tema</small>
+          </div>
+          <input type="checkbox" id="toggle-transparent-bg" checked />
+        </div>
+
+        <div>
+          <label for="theme-select">🎨 Tema Tampilan Overlay (5 Pilihan Tema)</label>
+          <select id="theme-select">
+            <option value="kayu_hangat" selected>🪵 Kayu Hangat (Klasik Oranye)</option>
+            <option value="cyber_neon">⚡ Cyber Neon (Ungu & Biru Neon)</option>
+            <option value="sakura_candy">🌸 Sakura Candy (Pink Pastel)</option>
+            <option value="samudra_biru">🌊 Samudra Biru (Biru Laut Segar)</option>
+            <option value="hutan_zamrud">🌿 Hutan Zamrud (Hijau Segar)</option>
+          </select>
+          <div class="theme-swatches" id="theme-swatches">
+            <button type="button" class="theme-chip is-active" data-theme="kayu_hangat" style="background: linear-gradient(135deg, #b68452, #f3a133);">🪵 Kayu</button>
+            <button type="button" class="theme-chip" data-theme="cyber_neon" style="background: linear-gradient(135deg, #5b21b6, #06b6d4);">⚡ Cyber</button>
+            <button type="button" class="theme-chip" data-theme="sakura_candy" style="background: linear-gradient(135deg, #e11d48, #f472b6);">🌸 Sakura</button>
+            <button type="button" class="theme-chip" data-theme="samudra_biru" style="background: linear-gradient(135deg, #0369a1, #38bdf8);">🌊 Laut</button>
+            <button type="button" class="theme-chip" data-theme="hutan_zamrud" style="background: linear-gradient(135deg, #047857, #34d399);">🌿 Hutan</button>
+          </div>
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>🚂 Tampilkan Maskot Tutu &amp; Piko</span>
+            <small>Maskot bereaksi saat menang, gift, &amp; waktu hampir habis</small>
+          </div>
+          <input type="checkbox" id="toggle-show-mascots" checked />
+        </div>
+
+        <div class="toggle-row">
+          <div>
+            <span>🎁 Aktifkan Poin dari Gift TikTok</span>
+            <small>Pengirim gift otomatis mendapat tambahan poin di Top 10</small>
+          </div>
+          <input type="checkbox" id="toggle-gift-points" checked />
+        </div>
+
+        <div>
+          <label for="points-per-coin-select">Nilai Poin per 1 Koin Gift</label>
+          <select id="points-per-coin-select">
+            <option value="5">1 Koin = +5 Poin (10 Koin = +50)</option>
+            <option value="10" selected>1 Koin = +10 Poin (10 Koin = +100)</option>
+            <option value="20">1 Koin = +20 Poin (10 Koin = +200)</option>
+            <option value="50">1 Koin = +50 Poin (10 Koin = +500)</option>
+            <option value="100">1 Koin = +100 Poin (10 Koin = +1.000)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="difficulty-select">Tingkat Kesulitan Soal</label>
+          <select id="difficulty-select">
+            <option value="semua" selected>🌈 Semua Tingkat (Campur)</option>
+            <option value="mudah">🟢 Mudah (+10 pts, Hint Banyak)</option>
+            <option value="sedang">🟡 Sedang (+15 pts, Hint Normal)</option>
+            <option value="sulit">🔴 Sulit (+25 pts, Hint Minim)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="daily-schedule-select">📅 Jadwal Soal Harian (7 Hari Berbeda)</label>
+          <select id="daily-schedule-select">
+            <option value="auto" selected>🔄 Otomatis Sesuai Hari Ini (Ganti Tiap Hari)</option>
+            <option value="all">♾️ Semua Hari (Gabung 1 Minggu)</option>
+            <option value="1">📅 Edisi Senin</option>
+            <option value="2">📅 Edisi Selasa</option>
+            <option value="3">📅 Edisi Rabu</option>
+            <option value="4">📅 Edisi Kamis</option>
+            <option value="5">📅 Edisi Jumat</option>
+            <option value="6">📅 Edisi Sabtu</option>
+            <option value="0">📅 Edisi Minggu</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="duration-select">Durasi Timer Per Soal</label>
+          <select id="duration-select">
+            <option value="20">20 detik (Cepat)</option>
+            <option value="30">30 detik</option>
+            <option value="45" selected>45 detik (Normal)</option>
+            <option value="60">60 detik</option>
+            <option value="90">90 detik (Santai)</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- 2. Kontrol Soal & Skor -->
+      <section class="panel">
+        <h2>
+          <span>❓ Kontrol Soal</span>
+          <span class="status-pill" id="q-counter">Soal 1 / 24</span>
+        </h2>
+
+        <div class="question-preview">
+          <div class="q-cat" id="preview-cat">-</div>
+          <div class="q-text" id="preview-q">Memuat soal...</div>
+          <div class="q-ans">Kunci Jawaban: <span id="preview-ans">-</span></div>
+        </div>
+
+        <div class="row">
+          <button class="btn-ghost" id="btn-prev-q">⬅️ Sebelumnya</button>
+          <button class="btn-primary" id="btn-next-q">Soal Berikutnya ➡️</button>
+          <button class="btn-green" id="btn-shuffle-q">🎲 Acak Soal</button>
+          <button class="btn-primary" id="btn-pause-timer">⏸️ Pause Timer</button>
+          <button class="btn-ghost" id="btn-reload-q">🔄 Reload JSON</button>
+        </div>
+
+        <div>
+          <label for="category-select">Lompat ke Kategori</label>
+          <select id="category-select"></select>
+        </div>
+
+        <div>
+          <label for="jump-select">Pilih Soal Spesifik</label>
+          <select id="jump-select"></select>
+        </div>
+
+        <div class="row" style="margin-top: auto;">
+          <button class="btn-red" id="btn-reset-score">🗑️ Reset Skor</button>
+          <button class="btn-ghost" id="btn-reset-followers">🧹 Reset Followers (<span id="follower-count">0</span>)</button>
+        </div>
+      </section>
+
+      <!-- 3. Mode Simulasi / Testing Offline -->
+      <section class="panel">
+        <h2>🧪 Mode Simulasi / Testing</h2>
+        <p style="font-size: 12.5px; font-weight: 700; color: var(--muted);">
+          Uji coba alur game, animasi terbang ke atas, dan suara tanpa harus sedang live di TikTok.
+        </p>
+
+        <div>
+          <label for="sim-username">Username Penonton Simulasi</label>
+          <input type="text" id="sim-username" value="budi_gaming" placeholder="username tanpa @" />
+        </div>
+
+        <div class="row">
+          <button class="btn-green" id="btn-sim-follow">💖 Simulasi User Follow</button>
+          <button class="btn-ghost" id="btn-sim-random-follow">🎲 Follow Acak</button>
+        </div>
+
+        <div>
+          <label for="sim-comment">Komentar Chat Simulasi</label>
+          <input type="text" id="sim-comment" placeholder="Ketik jawaban atau !ikut" />
+        </div>
+
+        <div class="row">
+          <button class="btn-primary" id="btn-sim-chat">💬 Kirim Komentar</button>
+          <button class="btn-ghost" id="btn-fill-answer">✨ Isi Jawaban Benar</button>
+        </div>
+
+        <div class="row">
+          <button class="btn-green" id="btn-sim-random-win" style="flex: 1;">
+            🏆 Test Penjawab Acak
+          </button>
+          <button class="btn-primary" id="btn-sim-gift" style="flex: 1;">
+            🎁 Simulasi Gift
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. Live Chat Log & Klasemen -->
+      <section class="panel">
+        <h2>📊 Klasemen Top 10 &amp; Log Chat</h2>
+        <div class="mini-leader" id="admin-leaderboard"></div>
+        <label style="margin-top: 6px;">Log Komentar Masuk Terbaru</label>
+        <div class="chat-log" id="admin-chat-log">
+          <div class="chat-entry" style="color: var(--muted);">Belum ada komentar masuk...</div>
+        </div>
+      </section>
+
+      <!-- 5. Tambah Soal Dadakan -->
+      <section class="panel">
+        <h2>➕ Tambah Soal Dadakan</h2>
+        <p style="font-size: 12.5px; font-weight: 700; color: var(--muted);">
+          Tambahkan soal baru langsung saat live tanpa perlu edit file JSON manual.
+        </p>
+        <div>
+          <label for="new-q-cat">Kategori</label>
+          <input type="text" id="new-q-cat" value="Tebak Cepat" placeholder="misal: Nama Buah / Custom" />
+        </div>
+        <div>
+          <label for="new-q-diff">Tingkat Kesulitan</label>
+          <select id="new-q-diff">
+            <option value="mudah">🟢 Mudah (+10 pts)</option>
+            <option value="sedang">🟡 Sedang (+15 pts)</option>
+            <option value="sulit">🔴 Sulit (+25 pts)</option>
+          </select>
+        </div>
+        <div>
+          <label for="new-q-text">Pertanyaan</label>
+          <input type="text" id="new-q-text" placeholder="contoh: Ibu kota provinsi Bali adalah?" />
+        </div>
+        <div>
+          <label for="new-q-ans">Kunci Jawaban</label>
+          <input type="text" id="new-q-ans" placeholder="contoh: DENPASAR" />
+        </div>
+        <div class="toggle-row">
+          <div>
+            <span>Langsung Tampilkan Setelah Ditambah</span>
+            <small>Otomatis pindah ke soal baru ini</small>
+          </div>
+          <input type="checkbox" id="new-q-jump" checked />
+        </div>
+        <button class="btn-green" id="btn-add-question" style="width: 100%;">➕ Simpan & Tambah Soal</button>
+      </section>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    const connStatus = document.getElementById('conn-status');
+    const connError = document.getElementById('conn-error');
+    const usernameInput = document.getElementById('tiktok-username');
+    const toggleAutoAdvance = document.getElementById('toggle-auto-advance');
+    const toggleShuffle = document.getElementById('toggle-shuffle');
+    const toggleAutoReconnect = document.getElementById('toggle-auto-reconnect');
+    const toggleTransparentBg = document.getElementById('toggle-transparent-bg');
+    const themeSelect = document.getElementById('theme-select');
+    const themeChips = document.querySelectorAll('#theme-swatches .theme-chip');
+    const toggleShowMascots = document.getElementById('toggle-show-mascots');
+    const toggleGiftPoints = document.getElementById('toggle-gift-points');
+    const pointsPerCoinSelect = document.getElementById('points-per-coin-select');
+    const gameModeSelect = document.getElementById('gamemode-select');
+    const difficultySelect = document.getElementById('difficulty-select');
+    const dailyScheduleSelect = document.getElementById('daily-schedule-select');
+    const durationSelect = document.getElementById('duration-select');
+    const btnPauseTimer = document.getElementById('btn-pause-timer');
+
+    const qCounter = document.getElementById('q-counter');
+    const previewCat = document.getElementById('preview-cat');
+    const previewQ = document.getElementById('preview-q');
+    const previewAns = document.getElementById('preview-ans');
+    const categorySelect = document.getElementById('category-select');
+    const jumpSelect = document.getElementById('jump-select');
+    const followerCount = document.getElementById('follower-count');
+    const adminLeaderboard = document.getElementById('admin-leaderboard');
+    const adminChatLog = document.getElementById('admin-chat-log');
+
+    const simUsername = document.getElementById('sim-username');
+    const simComment = document.getElementById('sim-comment');
+
+    let questionsCache = [];
+    let currentAnswer = '';
+    let activeMode = 'tebak_tebakan';
+
+    // Connection buttons
+    document.getElementById('btn-connect').addEventListener('click', () => {
+      socket.emit('admin_connect_tiktok', { username: usernameInput.value });
+    });
+
+    document.getElementById('btn-disconnect').addEventListener('click', () => {
+      socket.emit('admin_disconnect_tiktok');
+    });
+
+    function syncThemeChips(val) {
+      themeChips.forEach((btn) => {
+        btn.classList.toggle('is-active', btn.dataset.theme === val);
+      });
+    }
+
+    // Settings toggles
+    function emitSettings() {
+      syncThemeChips(themeSelect.value);
+      socket.emit('admin_update_settings', {
+        strictFollow: false,
+        autoAdvance: toggleAutoAdvance.checked,
+        shuffleQuestions: toggleShuffle.checked,
+        autoReconnect: toggleAutoReconnect.checked,
+        theme: themeSelect.value,
+        transparentBg: toggleTransparentBg.checked,
+        showMascots: toggleShowMascots.checked,
+        giftPointsEnabled: toggleGiftPoints.checked,
+        pointsPerCoin: Number(pointsPerCoinSelect.value),
+        gameMode: gameModeSelect.value,
+        difficulty: difficultySelect.value,
+        dailySchedule: dailyScheduleSelect.value,
+        roundDuration: Number(durationSelect.value)
+      });
+    }
+    toggleAutoAdvance.addEventListener('change', emitSettings);
+    toggleShuffle.addEventListener('change', emitSettings);
+    toggleAutoReconnect.addEventListener('change', emitSettings);
+    toggleTransparentBg.addEventListener('change', emitSettings);
+    themeSelect.addEventListener('change', emitSettings);
+    themeChips.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        themeSelect.value = btn.dataset.theme;
+        emitSettings();
+      });
+    });
+    toggleShowMascots.addEventListener('change', emitSettings);
+    toggleGiftPoints.addEventListener('change', emitSettings);
+    pointsPerCoinSelect.addEventListener('change', emitSettings);
+    gameModeSelect.addEventListener('change', emitSettings);
+    difficultySelect.addEventListener('change', emitSettings);
+    dailyScheduleSelect.addEventListener('change', emitSettings);
+    durationSelect.addEventListener('change', emitSettings);
+
+    btnPauseTimer.addEventListener('click', () => {
+      socket.emit('admin_toggle_pause');
+    });
+
+    // Question controls
+    document.getElementById('btn-prev-q').addEventListener('click', () => {
+      socket.emit('admin_prev_question');
+    });
+    document.getElementById('btn-next-q').addEventListener('click', () => {
+      socket.emit('admin_next_question');
+    });
+    document.getElementById('btn-shuffle-q').addEventListener('click', () => {
+      socket.emit('admin_shuffle_now');
+    });
+    document.getElementById('btn-reload-q').addEventListener('click', () => {
+      socket.emit('admin_reload_questions');
+    });
+    categorySelect.addEventListener('change', () => {
+      const cat = categorySelect.value;
+      const firstMatch = questionsCache.find((q) => q.category === cat);
+      if (firstMatch) {
+        socket.emit('admin_jump_question', { index: firstMatch.index });
+      }
+    });
+    jumpSelect.addEventListener('change', () => {
+      socket.emit('admin_jump_question', { index: Number(jumpSelect.value) });
+    });
+
+    // Resets
+    document.getElementById('btn-reset-score').addEventListener('click', () => {
+      if (confirm('Yakin ingin mereset semua skor leaderboard?')) {
+        socket.emit('admin_reset_leaderboard');
+      }
+    });
+    document.getElementById('btn-reset-followers').addEventListener('click', () => {
+      if (confirm('Yakin ingin menghapus daftar follower tersimpan?')) {
+        socket.emit('admin_reset_followers');
+      }
+    });
+
+    // Simulation controls
+    document.getElementById('btn-sim-follow').addEventListener('click', () => {
+      socket.emit('admin_sim_follow', {
+        uniqueId: simUsername.value.trim() || 'penonton_seru',
+        nickname: simUsername.value.trim() || 'Penonton Seru'
+      });
+    });
+
+    document.getElementById('btn-sim-random-follow').addEventListener('click', () => {
+      const rand = `user_${Math.floor(Math.random() * 900 + 100)}`;
+      simUsername.value = rand;
+      socket.emit('admin_sim_follow', { uniqueId: rand, nickname: rand });
+    });
+
+    document.getElementById('btn-sim-chat').addEventListener('click', () => {
+      socket.emit('admin_sim_chat', {
+        uniqueId: simUsername.value.trim() || 'penonton_seru',
+        nickname: simUsername.value.trim() || 'Penonton Seru',
+        comment: simComment.value
+      });
+    });
+
+    document.getElementById('btn-fill-answer').addEventListener('click', () => {
+      simComment.value = currentAnswer;
+    });
+
+    document.getElementById('btn-sim-random-win').addEventListener('click', () => {
+      const randUser = `pemain_${Math.floor(Math.random() * 90 + 10)}`;
+      let simText = currentAnswer;
+      if (activeMode === 'battle_voting') {
+        simText = Math.random() < 0.5 ? '1' : '2';
+      } else if (activeMode === 'benar_salah') {
+        simText = Math.random() < 0.5 ? 'BENAR' : 'SALAH';
+      }
+      socket.emit('admin_sim_chat', {
+        uniqueId: randUser,
+        nickname: randUser,
+        comment: simText
+      });
+    });
+
+    document.getElementById('btn-sim-gift').addEventListener('click', () => {
+      const sampleGifts = [
+        { giftName: 'Mawar', diamondCount: 1, repeatCount: 1 },
+        { giftName: 'TikTok', diamondCount: 1, repeatCount: 1 },
+        { giftName: 'Kopi', diamondCount: 10, repeatCount: 1 }
+      ];
+      const pick = sampleGifts[Math.floor(Math.random() * sampleGifts.length)];
+      socket.emit('admin_sim_gift', {
+        uniqueId: simUsername.value.trim() || 'sultan_live',
+        ...pick
+      });
+    });
+
+    document.getElementById('btn-add-question').addEventListener('click', () => {
+      const category = document.getElementById('new-q-cat').value.trim();
+      const difficulty = document.getElementById('new-q-diff').value;
+      const question = document.getElementById('new-q-text').value.trim();
+      const answer = document.getElementById('new-q-ans').value.trim();
+      const jumpNow = document.getElementById('new-q-jump').checked;
+      if (!question || !answer) {
+        alert('Pertanyaan dan Kunci Jawaban wajib diisi!');
+        return;
+      }
+      socket.emit('admin_add_question', { category, difficulty, question, answer, jumpNow });
+      document.getElementById('new-q-text').value = '';
+      document.getElementById('new-q-ans').value = '';
+    });
+
+    // Socket listeners
+    socket.on('admin_questions_list', ({ questions, activeDayIndex }) => {
+      questionsCache = questions || [];
+      const categories = [...new Set(questionsCache.map((q) => q.category))];
+      categorySelect.innerHTML = '';
+      categories.forEach((cat) => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        categorySelect.appendChild(opt);
+      });
+
+      jumpSelect.innerHTML = '';
+      questionsCache.forEach((q, i) => {
+        const opt = document.createElement('option');
+        opt.value = q.index;
+        const diffTag = (q.difficulty || 'mudah').toUpperCase();
+        const dayTag = activeDayIndex === null && q.dayName ? `${q.dayName} • ` : '';
+        opt.textContent = `#${i + 1} [${dayTag}${q.category} • ${diffTag}] ${q.question.slice(0, 42)}...`;
+        jumpSelect.appendChild(opt);
+      });
+    });
+
+    socket.on('admin_round_info', ({ activeRoundMode, answer, answerPreview }) => {
+      activeMode = activeRoundMode || 'tebak_tebakan';
+      currentAnswer = answer || '';
+      previewAns.textContent = answerPreview || currentAnswer || '(tersembunyi)';
+    });
+
+    socket.on('game_state', (data) => {
+      connStatus.textContent = data.connectionStatus.toUpperCase();
+      connStatus.className = `status-pill ${data.connectionStatus}`;
+      connError.textContent = data.connectionError || '';
+      if (data.tiktokUsername && !usernameInput.value) {
+        usernameInput.value = data.tiktokUsername;
+      }
+
+      toggleAutoAdvance.checked = data.autoAdvance;
+      toggleShuffle.checked = data.shuffleQuestions;
+      toggleAutoReconnect.checked = Boolean(data.autoReconnect);
+      toggleTransparentBg.checked = Boolean(data.transparentBg);
+      themeSelect.value = data.theme || 'kayu_hangat';
+      syncThemeChips(themeSelect.value);
+      toggleShowMascots.checked = data.showMascots !== false;
+      toggleGiftPoints.checked = data.giftPointsEnabled !== false;
+      pointsPerCoinSelect.value = String(data.pointsPerCoin || 10);
+      gameModeSelect.value = data.gameMode || 'tebak_tebakan';
+      difficultySelect.value = data.difficulty || 'semua';
+      dailyScheduleSelect.value = String(data.dailySchedule ?? 'auto');
+      durationSelect.value = String(data.roundDuration || 45);
+      btnPauseTimer.textContent = data.isPaused ? '▶️ Lanjutkan Timer' : '⏸️ Pause Timer';
+      btnPauseTimer.className = data.isPaused ? 'btn-green' : 'btn-primary';
+      followerCount.textContent = data.totalFollowers || 0;
+
+      if (data.question) {
+        const dayLabel = data.dailySchedule === 'all' ? 'Semua Hari' : `Edisi ${data.activeDayName || 'Hari Ini'}`;
+        qCounter.textContent = `${dayLabel} • Soal ${data.questionNumber} / ${data.totalQuestions}`;
+        const diffTag = (data.question.difficulty || 'mudah').toUpperCase();
+        previewCat.textContent = `${data.question.category} • ${diffTag} (+${data.question.points || 10} pts)`;
+        previewQ.textContent = data.question.question;
+        if (questionsCache.some((q) => q.category === data.question.category)) {
+          categorySelect.value = data.question.category;
+        }
+        if (data.activeRoundMode !== 'hitung_cepat') {
+          jumpSelect.value = String(data.currentQuestionRawIndex ?? (data.questionNumber - 1));
+        }
+      }
+
+      // Render mini leaderboard
+      if (!data.leaderboard.length) {
+        adminLeaderboard.innerHTML = '<div class="mini-leader-item" style="color: var(--muted);">Belum ada skor</div>';
+      } else {
+        adminLeaderboard.innerHTML = data.leaderboard
+          .map((p, i) => `<div class="mini-leader-item"><span>#${i + 1} @${p.uniqueId}</span><span>${p.score} pts</span></div>`)
+          .join('');
+      }
+    });
+
+    socket.on('admin_chat_log', (logs) => {
+      if (!logs || !logs.length) return;
+      adminChatLog.innerHTML = logs
+        .map((c) => `<div class="chat-entry"><strong>@${c.uniqueId}:</strong> ${c.comment}</div>`)
+        .join('');
+    });
+  </script>
+</body>
+</html>

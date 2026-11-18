@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tebak-Tebakan Live TikTok Overlay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-theme="kayu_hangat">
+  <canvas id="confetti-canvas"></canvas>
+
+  <main class="overlay-stage" id="overlay-stage">
+    <!-- MASCOTS: Tutu (Primary) & Piko (Companion) -->
+    <div class="mascots-stage" id="mascots-stage">
+      <div class="mascot-slot mascot-left" id="mascot-tutu-wrap">
+        <img id="mascot-tutu" src="/mascots/tutu-thinking.png" alt="Tutu" class="mascot-img" />
+        <span class="mascot-name-tag">TUTU</span>
+      </div>
+      <div class="mascot-slot mascot-right" id="mascot-piko-wrap">
+        <img id="mascot-piko" src="/mascots/piko-cute.png" alt="Piko" class="mascot-img" />
+        <span class="mascot-name-tag tag-piko">PIKO</span>
+      </div>
+    </div>
+
+    <!-- 1. TOP HANGING WOODEN TITLE SIGN -->
+    <header class="top-title-wrap">
+      <div class="wood-nail"></div>
+      <div class="wood-rope"></div>
+      <div class="comic-title-box">
+        <h1 id="game-mode-title">TEBAK-TEBAKAN</h1>
+      </div>
+    </header>
+
+    <!-- 2. CATEGORY & TIMER ROW -->
+    <div class="meta-pills-row">
+      <div class="pill-blue" id="question-category-pill">
+        <span>📘</span>
+        <span id="question-category">TEBAK-TEBAKAN</span>
+      </div>
+      <div class="pill-timer" id="timer-pill">
+        <span>⏱️</span>
+        <span id="timer-seconds">45</span>s
+      </div>
+    </div>
+
+    <!-- 3. SESSION / QUESTION NUMBER & REWARD STRIP -->
+    <div class="session-strip">
+      <div class="session-left">
+        <span class="live-dot-mini" id="live-status-dot"></span>
+        <span id="live-status-text">OFFLINE</span>
+        <span class="sep">•</span>
+        <span class="daily-edition-tag" id="daily-edition-text">📅 HARI INI</span>
+        <span class="sep">•</span>
+        <span>#<strong id="question-number">1</strong>/<strong id="question-total">20</strong></span>
+      </div>
+      <div class="session-reward-pill" id="question-difficulty">
+        🟢 MUDAH: +10 POIN
+      </div>
+    </div>
+
+    <!-- 4. MAIN QUESTION CARD -->
+    <section class="question-box" id="question-card">
+      <div class="question-text" id="question-text">Memuat soal seru...</div>
+      <div class="tiles-container" id="tiles-container"></div>
+    </section>
+
+    <!-- 5. YELLOW CTA BAR -->
+    <div class="cta-banner">
+      <span class="cta-bubble">💬</span>
+      <span class="cta-text" id="rule-text">JAWAB DI KOMENTAR!</span>
+      <span class="cta-arrow">⬇</span>
+    </div>
+
+    <!-- 6. ACTIVITY METER & COMPLETED COUNTER -->
+    <div class="status-row">
+      <div class="activity-left">
+        <div class="activity-pill">
+          <span>🔥</span>
+          <span id="activity-label">SIAP MAIN</span>
+        </div>
+        <div class="activity-bars" id="activity-bars">
+          <span class="act-bar"></span>
+          <span class="act-bar"></span>
+          <span class="act-bar"></span>
+          <span class="act-bar"></span>
+          <span class="act-bar"></span>
+        </div>
+      </div>
+      <div class="solved-pill">
+        <span>SOAL SELESAI</span>
+        <strong id="questions-completed">0</strong>
+      </div>
+    </div>
+
+    <!-- 7. TWO-COLUMN SPLIT: JAWABAN MASUK LIVE (LEFT) & TOP 10 POIN (RIGHT) -->
+    <section class="two-col-grid">
+      <!-- LEFT COLUMN: LIVE CHAT ANSWERS -->
+      <div class="col-card">
+        <div class="col-header">
+          <span>💬 JAWABAN MASUK</span>
+          <span class="col-header-tag live-tag">LIVE</span>
+        </div>
+        <div class="feed-list" id="answer-feed-list">
+          <div class="empty-mini">Menunggu komentar masuk...</div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: TOP 10 LEADERBOARD -->
+      <div class="col-card">
+        <div class="col-header">
+          <span>🏆 TOP 10</span>
+          <span class="col-header-tag">POIN</span>
+        </div>
+        <div class="top10-list" id="leaderboard-list">
+          <div class="empty-mini">Belum ada poin</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BOTTOM LIVE GIFT POWER & FOLLOW STRIP -->
+    <section class="live-ticker-card" id="live-ticker-card">
+      <div class="ticker-header">
+        <span id="ticker-title-text">🎁 KEKUATAN GIFT TIKTOK</span>
+        <span class="ticker-sub" id="ticker-sub-text">1 KOIN = +10 POIN</span>
+      </div>
+      <div class="ticker-body" id="notifications-section">
+        <div class="gift-power-grid">
+          <div class="gift-power-box gp-one">
+            <span class="gp-coin">🪙 1 Koin</span>
+            <strong class="gp-pts">+10 Poin</strong>
+          </div>
+          <div class="gift-power-box gp-ten">
+            <span class="gp-coin">🪙 10 Koin</span>
+            <strong class="gp-pts">+100 Poin</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WINNER SPOTLIGHT POPUP (BRIEF CELEBRATION OVERLAY) -->
+  <div class="winner-toast-popup hidden" id="winner-spotlight">
+    <div class="winner-popup-card">
+      <img id="winner-avatar" src="" alt="Winner" class="winner-popup-avatar" />
+      <div class="winner-popup-info">
+        <div class="winner-popup-title">🎉 BENAR! <span id="winner-points">+10 POIN</span></div>
+        <div class="winner-popup-name" id="winner-name">@username</div>
+        <div class="winner-popup-ans">Jawaban: <strong id="winner-answer">BAKSO</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMEOUT REVEAL BANNER -->
+  <div class="timeout-banner hidden" id="timeout-banner">
+    <div class="timeout-card">
+      <div class="timeout-title">⏰ WAKTU HABIS!</div>
+      <div class="timeout-answer">Jawaban: <strong id="timeout-answer-text">-</strong></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

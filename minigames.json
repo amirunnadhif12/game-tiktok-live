@@ -1,0 +1,2938 @@
+{
+  "sebutKata": [
+    {
+      "id": 1,
+      "category": "Nama Buah",
+      "letter": "M",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf M!",
+      "answers": [
+        "MANGGA",
+        "MELON",
+        "MANGGIS",
+        "MARKISA",
+        "MATOA",
+        "MENTENG",
+        "MURBEI"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 2,
+      "category": "Nama Buah",
+      "letter": "S",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf S!",
+      "answers": [
+        "SEMANGKA",
+        "SALAK",
+        "SAWO",
+        "SIRSAK",
+        "STROBERI",
+        "SRIKAYA",
+        "SUKUN"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 3,
+      "category": "Nama Buah",
+      "letter": "P",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf P!",
+      "answers": [
+        "PISANG",
+        "PEPAYA",
+        "PIR",
+        "PERSIK",
+        "PALA"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 4,
+      "category": "Nama Buah",
+      "letter": "K",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf K!",
+      "answers": [
+        "KELAPA",
+        "KIWI",
+        "KURMA",
+        "KEDONDONG",
+        "KELENGKENG",
+        "KESEMEK",
+        "KERSEN",
+        "KUINI"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 5,
+      "category": "Nama Kota",
+      "letter": "B",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf B!",
+      "answers": [
+        "BANDUNG",
+        "BOGOR",
+        "BEKASI",
+        "BATAM",
+        "BALIKPAPAN",
+        "BANJARMASIN",
+        "BENGKULU",
+        "BLITAR",
+        "BANYUWANGI",
+        "BITUNG",
+        "BIMA",
+        "BONTANG",
+        "BUKITTINGGI",
+        "BINJAI",
+        "BANDA ACEH"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 6,
+      "category": "Nama Kota",
+      "letter": "S",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf S!",
+      "answers": [
+        "SURABAYA",
+        "SEMARANG",
+        "SOLO",
+        "SURAKARTA",
+        "SUKABUMI",
+        "SAMARINDA",
+        "SERANG",
+        "SUBANG",
+        "SUMEDANG",
+        "SIDOARJO",
+        "SALATIGA",
+        "SORONG",
+        "SINGKAWANG",
+        "SIBOLGA"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 7,
+      "category": "Nama Kota",
+      "letter": "M",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf M!",
+      "answers": [
+        "MEDAN",
+        "MALANG",
+        "MAKASSAR",
+        "MANADO",
+        "MATARAM",
+        "MAGELANG",
+        "MADIUN",
+        "MOJOKERTO",
+        "METRO",
+        "MERAUKE"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 8,
+      "category": "Nama Kota",
+      "letter": "P",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf P!",
+      "answers": [
+        "PALEMBANG",
+        "PADANG",
+        "PEKANBARU",
+        "PONTIANAK",
+        "PALU",
+        "PASURUAN",
+        "PROBOLINGGO",
+        "PEKALONGAN",
+        "PURWOKERTO",
+        "PURWAKARTA",
+        "PALANGKARAYA",
+        "PARE PARE",
+        "PAREPARE",
+        "PRABUMULIH"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 9,
+      "category": "Nama Hewan",
+      "letter": "K",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf K!",
+      "answers": [
+        "KUCING",
+        "KELINCI",
+        "KAMBING",
+        "KUDA",
+        "KOMODO",
+        "KANGURU",
+        "KERBAU",
+        "KODOK",
+        "KATAK",
+        "KELELAWAR",
+        "KUPU KUPU",
+        "KURA KURA",
+        "KOALA",
+        "KAKAKTUA",
+        "KEPITING",
+        "KADAL",
+        "KUTU"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 10,
+      "category": "Nama Hewan",
+      "letter": "B",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf B!",
+      "answers": [
+        "BEBEK",
+        "BUAYA",
+        "BURUNG",
+        "BERUANG",
+        "BANTENG",
+        "BABI",
+        "BADAK",
+        "BELALANG",
+        "BUNGKUK",
+        "BUNGLON",
+        "BIAWAK",
+        "BEKICOT",
+        "BANGAU"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 11,
+      "category": "Nama Hewan",
+      "letter": "G",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf G!",
+      "answers": [
+        "GAJAH",
+        "GURITA",
+        "GORILA",
+        "GAGAK",
+        "GABUS"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 12,
+      "category": "Nama Hewan",
+      "letter": "S",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf S!",
+      "answers": [
+        "SAPI",
+        "SINGA",
+        "SEMUT",
+        "SERIGALA",
+        "SIPUT",
+        "SRIGALA",
+        "SIMPANSE",
+        "SOTONG"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 13,
+      "category": "Makanan",
+      "letter": "S",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf S!",
+      "answers": [
+        "SATE",
+        "SOTO",
+        "SOP",
+        "SIOMAY",
+        "SEBLAK",
+        "SERABI",
+        "SUSHI",
+        "STEAK",
+        "SPAGETI",
+        "SALAD",
+        "SAMBAL",
+        "SEMUR",
+        "SOTO AYAM"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 14,
+      "category": "Makanan",
+      "letter": "B",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf B!",
+      "answers": [
+        "BAKSO",
+        "BUBUR",
+        "BATAGOR",
+        "BAKWAN",
+        "BOLU",
+        "BROWNIES",
+        "BURGER",
+        "BIHUN",
+        "BUBUR AYAM",
+        "BIKA AMBON",
+        "BAKPIA"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 15,
+      "category": "Makanan",
+      "letter": "R",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf R!",
+      "answers": [
+        "RENDANG",
+        "ROTI",
+        "RAWON",
+        "RUJAK",
+        "RISOLES",
+        "RISOL",
+        "REMPEYEK",
+        "RENGINANG"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 16,
+      "category": "Nama Negara",
+      "letter": "I",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf I!",
+      "answers": [
+        "INDONESIA",
+        "INGGRIS",
+        "INDIA",
+        "ITALIA",
+        "IRLANDIA",
+        "IRAN",
+        "IRAK",
+        "ISLANDIA"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 17,
+      "category": "Nama Negara",
+      "letter": "J",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf J!",
+      "answers": [
+        "JEPANG",
+        "JERMAN",
+        "JAMAIKA",
+        "JORDANIA",
+        "YORDANIA"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 18,
+      "category": "Nama Negara",
+      "letter": "M",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf M!",
+      "answers": [
+        "MALAYSIA",
+        "MESIR",
+        "MEKSIKO",
+        "MAROKO",
+        "MYANMAR",
+        "MALADEWA",
+        "MONAKO",
+        "MONGOLIA"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 19,
+      "category": "Pekerjaan",
+      "letter": "P",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA PEKERJAAN yang berawalan huruf P!",
+      "answers": [
+        "POLISI",
+        "PILOT",
+        "PETANI",
+        "PERAWAT",
+        "PEMADAM",
+        "PEDAGANG",
+        "PENULIS",
+        "PENYANYI",
+        "PENGACARA",
+        "PELUKIS",
+        "PROGRAMMER",
+        "PELAUT",
+        "PRAMUGARI",
+        "PENJAHIT"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 20,
+      "category": "Benda Rumah",
+      "letter": "L",
+      "difficulty": "sulit",
+      "question": "Sebutkan BENDA DI RUMAH yang berawalan huruf L!",
+      "answers": [
+        "LEMARI",
+        "LAMPU",
+        "LANTAI",
+        "LACI",
+        "LAP",
+        "LOYANG",
+        "LILIN"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 21,
+      "category": "Benda Rumah",
+      "letter": "K",
+      "difficulty": "mudah",
+      "question": "Sebutkan BENDA DI RUMAH yang berawalan huruf K!",
+      "answers": [
+        "KURSI",
+        "KASUR",
+        "KULKAS",
+        "KIPAS",
+        "KOMPOR",
+        "KARPET",
+        "KACA",
+        "KAIN",
+        "KOPER",
+        "KUNCI",
+        "KESET",
+        "KAMAR"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 22,
+      "category": "Nama Warna",
+      "letter": "M",
+      "difficulty": "sulit",
+      "question": "Sebutkan NAMA WARNA yang berawalan huruf M!",
+      "answers": [
+        "MERAH",
+        "MERAH MUDA",
+        "MARUN",
+        "MAGENTA",
+        "MINT"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 23,
+      "category": "Nama Negara",
+      "letter": "S",
+      "difficulty": "sulit",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf S!",
+      "answers": [
+        "SINGAPURA",
+        "SPANYOL",
+        "SWISS",
+        "SWEDIA",
+        "SKOTLANDIA",
+        "SENEGAL",
+        "SERBIA",
+        "SLOVAKIA",
+        "SRI LANKA",
+        "SURIAH",
+        "SUDAN"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 24,
+      "category": "Nama Kota",
+      "letter": "J",
+      "difficulty": "sulit",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf J!",
+      "answers": [
+        "JAKARTA",
+        "JOGJA",
+        "JOGJAKARTA",
+        "JAMBI",
+        "JAYAPURA",
+        "JEMBER",
+        "JEPARA",
+        "JOMBANG"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 25,
+      "category": "Nama Buah",
+      "letter": "A",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf A!",
+      "answers": [
+        "APEL",
+        "ANGGUR",
+        "ALPUKAT",
+        "ASAM",
+        "AREN"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 26,
+      "category": "Makanan",
+      "letter": "N",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf N!",
+      "answers": [
+        "NASI GORENG",
+        "NASI UDUK",
+        "NASI PADANG",
+        "NASI KUNING",
+        "NASTAR",
+        "NUGGET"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 27,
+      "category": "Minuman",
+      "letter": "E",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA MINUMAN yang berawalan huruf E!",
+      "answers": [
+        "ES TEH",
+        "ES JERUK",
+        "ES KRIM",
+        "ES BUAH",
+        "ES KELAPA",
+        "ES CENDOL",
+        "ES DAWET",
+        "ES KOPI"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 28,
+      "category": "Transportasi",
+      "letter": "K",
+      "difficulty": "sedang",
+      "question": "Sebutkan KENDARAAN yang berawalan huruf K!",
+      "answers": [
+        "KERETA",
+        "KERETA API",
+        "KAPAL",
+        "KAPAL LAUT",
+        "KAPAL SELAM",
+        "KANO"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 29,
+      "category": "Nama Hewan",
+      "letter": "A",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf A!",
+      "answers": [
+        "ANJING",
+        "AYAM",
+        "ANGSA",
+        "ANOA",
+        "ALPAKA",
+        "ANTELOP",
+        "ARWANA"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 30,
+      "category": "Nama Hewan",
+      "letter": "H",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf H!",
+      "answers": [
+        "HARIMAU",
+        "HIU",
+        "HYENA",
+        "HAMSTER"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 31,
+      "category": "Nama Hewan",
+      "letter": "L",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf L!",
+      "answers": [
+        "LEBAH",
+        "LUMBA LUMBA",
+        "LANDAK",
+        "LALAT",
+        "LABA LABA",
+        "LELE",
+        "LUTUNG"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 32,
+      "category": "Nama Hewan",
+      "letter": "T",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf T!",
+      "answers": [
+        "TIKUS",
+        "TUPAI",
+        "TOKEK",
+        "TAWON",
+        "TRENGGILING",
+        "TAPIR",
+        "TONGKOL",
+        "TERIPANG"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 33,
+      "category": "Nama Hewan",
+      "letter": "C",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA HEWAN yang berawalan huruf C!",
+      "answers": [
+        "CICAK",
+        "CHEETAH",
+        "CENDRAWASIH",
+        "CUMI CUMI",
+        "CAPUNG",
+        "CACING",
+        "CENDET"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 34,
+      "category": "Nama Buah",
+      "letter": "J",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf J!",
+      "answers": [
+        "JERUK",
+        "JAMBU",
+        "JAGUNG",
+        "JAMBLANG",
+        "JENGKOL",
+        "JAMBU AIR",
+        "JAMBU BIJI"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 35,
+      "category": "Nama Buah",
+      "letter": "D",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf D!",
+      "answers": [
+        "DURIAN",
+        "DUKU",
+        "DELIMA",
+        "DEWANDARU"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 36,
+      "category": "Nama Buah",
+      "letter": "B",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA BUAH yang berawalan huruf B!",
+      "answers": [
+        "BELIMBING",
+        "BUAH NAGA",
+        "BLEWAH",
+        "BENGKOANG",
+        "BACANG",
+        "BINJAI"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 37,
+      "category": "Nama Kota",
+      "letter": "T",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf T!",
+      "answers": [
+        "TANGERANG",
+        "TEGAL",
+        "TASIKMALAYA",
+        "TARAKAN",
+        "TERNATE",
+        "TUBAN",
+        "TEBING TINGGI",
+        "TOMOHON"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 38,
+      "category": "Nama Kota",
+      "letter": "D",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf D!",
+      "answers": [
+        "DEPOK",
+        "DENPASAR",
+        "DUMAI",
+        "DEMAK"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 39,
+      "category": "Nama Kota",
+      "letter": "K",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf K!",
+      "answers": [
+        "KEDIRI",
+        "KUPANG",
+        "KENDARI",
+        "KLATEN",
+        "KUDUS",
+        "KARAWANG",
+        "KUNINGAN",
+        "KOTAMOBAGU"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 40,
+      "category": "Nama Kota",
+      "letter": "C",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA KOTA di Indonesia berawalan huruf C!",
+      "answers": [
+        "CIREBON",
+        "CIMAHI",
+        "CILEGON",
+        "CIANJUR",
+        "CILACAP",
+        "CIAMIS",
+        "CIKARANG"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 41,
+      "category": "Nama Negara",
+      "letter": "A",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf A!",
+      "answers": [
+        "AMERIKA SERIKAT",
+        "AUSTRALIA",
+        "ARAB SAUDI",
+        "ARGENTINA",
+        "AUSTRIA",
+        "AFGANISTAN",
+        "ALJAZAIR",
+        "ARMENIA"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 42,
+      "category": "Nama Negara",
+      "letter": "K",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf K!",
+      "answers": [
+        "KOREA SELATAN",
+        "KANADA",
+        "KAMBOJA",
+        "KENYA",
+        "KUWAIT",
+        "KOLOMBIA",
+        "KROASIA",
+        "KUBA"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 43,
+      "category": "Nama Negara",
+      "letter": "P",
+      "difficulty": "sedang",
+      "question": "Sebutkan NAMA NEGARA yang berawalan huruf P!",
+      "answers": [
+        "PRANCIS",
+        "PORTUGAL",
+        "POLANDIA",
+        "PAKISTAN",
+        "PERU",
+        "PANAMA",
+        "PALESTINA",
+        "PARAGUAY"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 44,
+      "category": "Makanan",
+      "letter": "G",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf G!",
+      "answers": [
+        "GADO GADO",
+        "GUDEG",
+        "GULAI",
+        "GORENGAN",
+        "GETUK",
+        "GEHU",
+        "GEMBLONG",
+        "GANDASTURI"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 45,
+      "category": "Makanan",
+      "letter": "K",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf K!",
+      "answers": [
+        "KERUPUK",
+        "KLEPON",
+        "KETUPAT",
+        "KUE LAPIS",
+        "KROKET",
+        "KENTANG GORENG",
+        "KETOPRAK",
+        "KERAK TELOR"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 46,
+      "category": "Makanan",
+      "letter": "P",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MAKANAN yang berawalan huruf P!",
+      "answers": [
+        "PEMPEK",
+        "PIZZA",
+        "PASTEL",
+        "PECEL",
+        "PECEL LELE",
+        "PISANG GORENG",
+        "PERKEDEL",
+        "PUTU AYU"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 47,
+      "category": "Benda Rumah",
+      "letter": "P",
+      "difficulty": "mudah",
+      "question": "Sebutkan BENDA DI RUMAH berawalan huruf P!",
+      "answers": [
+        "PINTU",
+        "PIRING",
+        "PANCI",
+        "PISAU",
+        "PAYUNG",
+        "PIGURA",
+        "PAKU",
+        "PAJANGAN"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 48,
+      "category": "Benda Rumah",
+      "letter": "S",
+      "difficulty": "mudah",
+      "question": "Sebutkan BENDA DI RUMAH berawalan huruf S!",
+      "answers": [
+        "SAPU",
+        "SETRIKA",
+        "SENDOK",
+        "SABUN",
+        "SISIR",
+        "SOFA",
+        "SELIMUT",
+        "SENTER",
+        "SPREI"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 49,
+      "category": "Minuman",
+      "letter": "J",
+      "difficulty": "mudah",
+      "question": "Sebutkan NAMA MINUMAN berawalan huruf J!",
+      "answers": [
+        "JUS JERUK",
+        "JUS ALPUKAT",
+        "JUS MANGGA",
+        "JUS JAMBU",
+        "JUS TOMAT",
+        "JAMU",
+        "JAHE HANGAT"
+      ],
+      "dayOfWeek": 6
+    }
+  ],
+  "lengkapiKalimat": [
+    {
+      "id": 1,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Ada gula ada ____",
+      "answer": "SEMUT",
+      "aliases": [
+        "semut"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 2,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Rajin pangkal ____",
+      "answer": "PANDAI",
+      "aliases": [
+        "pandai",
+        "pintar"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 3,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Hemat pangkal ____",
+      "answer": "KAYA",
+      "aliases": [
+        "kaya"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 4,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Sedia payung sebelum ____",
+      "answer": "HUJAN",
+      "aliases": [
+        "hujan"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 5,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Sedikit demi sedikit lama-lama menjadi ____",
+      "answer": "BUKIT",
+      "aliases": [
+        "bukit"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 6,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Malas bertanya sesat di ____",
+      "answer": "JALAN",
+      "aliases": [
+        "jalan"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 7,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Jauh di mata dekat di ____",
+      "answer": "HATI",
+      "aliases": [
+        "hati"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 8,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Habis gelap terbitlah ____",
+      "answer": "TERANG",
+      "aliases": [
+        "terang"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 9,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Bersatu kita teguh bercerai kita ____",
+      "answer": "RUNTUH",
+      "aliases": [
+        "runtuh"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 10,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Sudah jatuh tertimpa ____",
+      "answer": "TANGGA",
+      "aliases": [
+        "tangga"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 11,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Buah jatuh tak jauh dari ____",
+      "answer": "POHONNYA",
+      "aliases": [
+        "pohonnya",
+        "pohon"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 12,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Bagai pinang dibelah ____",
+      "answer": "DUA",
+      "aliases": [
+        "dua"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 13,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Air beriak tanda tak ____",
+      "answer": "DALAM",
+      "aliases": [
+        "dalam"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 14,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai pungguk merindukan ____",
+      "answer": "BULAN",
+      "aliases": [
+        "bulan"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 15,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Tong kosong nyaring ____",
+      "answer": "BUNYINYA",
+      "aliases": [
+        "bunyinya",
+        "bunyi"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 16,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Sambil menyelam minum ____",
+      "answer": "AIR",
+      "aliases": [
+        "air"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 17,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Besar pasak daripada ____",
+      "answer": "TIANG",
+      "aliases": [
+        "tiang"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 18,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Tak ada rotan ____ pun jadi",
+      "answer": "AKAR",
+      "aliases": [
+        "akar"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 19,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai katak dalam ____",
+      "answer": "TEMPURUNG",
+      "aliases": [
+        "tempurung"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 20,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Lempar batu sembunyi ____",
+      "answer": "TANGAN",
+      "aliases": [
+        "tangan"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 21,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Sepandai-pandai tupai melompat akhirnya ____ juga",
+      "answer": "JATUH",
+      "aliases": [
+        "jatuh"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 22,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Cepat kaki ringan ____",
+      "answer": "TANGAN",
+      "aliases": [
+        "tangan"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 23,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Tuntutlah ilmu sampai ke negeri ____",
+      "answer": "CINA",
+      "aliases": [
+        "cina",
+        "china"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 24,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Patah tumbuh hilang ____",
+      "answer": "BERGANTI",
+      "aliases": [
+        "berganti"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 25,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Karena nila setitik rusak susu ____",
+      "answer": "SEBELANGA",
+      "aliases": [
+        "sebelanga"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 26,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Berakit-rakit ke hulu, berenang-renang ke ____",
+      "answer": "TEPIAN",
+      "aliases": [
+        "tepian"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 27,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Di mana bumi dipijak di situ langit ____",
+      "answer": "DIJUNJUNG",
+      "aliases": [
+        "dijunjung"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 28,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Buruk muka ____ dibelah",
+      "answer": "CERMIN",
+      "aliases": [
+        "cermin"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 29,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Berat sama dipikul ringan sama ____",
+      "answer": "DIJINJING",
+      "aliases": [
+        "dijinjing"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 30,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Bagai air di daun ____",
+      "answer": "TALAS",
+      "aliases": [
+        "talas",
+        "keladi"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 31,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Lain ladang lain ____",
+      "answer": "BELALANG",
+      "aliases": [
+        "belalang"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 32,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Menepuk air di dulang terpercik muka ____",
+      "answer": "SENDIRI",
+      "aliases": [
+        "sendiri"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 33,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Bagaikan air dengan ____",
+      "answer": "MINYAK",
+      "aliases": [
+        "minyak"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 34,
+      "category": "Ungkapan",
+      "difficulty": "sedang",
+      "question": "Diam itu ____",
+      "answer": "EMAS",
+      "aliases": [
+        "emas"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 35,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Harimau mati meninggalkan belang, manusia mati meninggalkan ____",
+      "answer": "NAMA",
+      "aliases": [
+        "nama"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 36,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Air susu dibalas dengan air ____",
+      "answer": "TUBA",
+      "aliases": [
+        "tuba"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 37,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Ada udang di balik ____",
+      "answer": "BATU",
+      "aliases": [
+        "batu"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 38,
+      "category": "Peribahasa",
+      "difficulty": "mudah",
+      "question": "Mulutmu adalah ____",
+      "answer": "HARIMAUMU",
+      "aliases": [
+        "harimaumu",
+        "harimau"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 39,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Tak kenal maka tak ____",
+      "answer": "SAYANG",
+      "aliases": [
+        "sayang"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 40,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Nasi sudah menjadi ____",
+      "answer": "BUBUR",
+      "aliases": [
+        "bubur"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 41,
+      "category": "Semboyan",
+      "difficulty": "mudah",
+      "question": "Bhinneka Tunggal ____",
+      "answer": "IKA",
+      "aliases": [
+        "ika"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 42,
+      "category": "Semboyan",
+      "difficulty": "mudah",
+      "question": "Dari Sabang sampai ____",
+      "answer": "MERAUKE",
+      "aliases": [
+        "merauke"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 43,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Kebersihan sebagian dari ____",
+      "answer": "IMAN",
+      "aliases": [
+        "iman"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 44,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Di mana ada kemauan di situ ada ____",
+      "answer": "JALAN",
+      "aliases": [
+        "jalan"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 45,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Berani karena benar takut karena ____",
+      "answer": "SALAH",
+      "aliases": [
+        "salah"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 46,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai telur di ujung ____",
+      "answer": "TANDUK",
+      "aliases": [
+        "tanduk"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 47,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai mencari jarum dalam ____",
+      "answer": "JERAMI",
+      "aliases": [
+        "jerami",
+        "tumpukan jerami"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 48,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai kacang lupa akan ____",
+      "answer": "KULITNYA",
+      "aliases": [
+        "kulitnya",
+        "kulit"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 49,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai api dalam ____",
+      "answer": "SEKAM",
+      "aliases": [
+        "sekam"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 50,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai musang berbulu ____",
+      "answer": "AYAM",
+      "aliases": [
+        "ayam"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 51,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai anak ayam kehilangan ____",
+      "answer": "INDUKNYA",
+      "aliases": [
+        "induknya",
+        "induk"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 52,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Habis manis sepah ____",
+      "answer": "DIBUANG",
+      "aliases": [
+        "dibuang"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 53,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Musuh dalam ____",
+      "answer": "SELIMUT",
+      "aliases": [
+        "selimut"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 54,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Dikasih hati minta ____",
+      "answer": "JANTUNG",
+      "aliases": [
+        "jantung"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 55,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Pagar makan ____",
+      "answer": "TANAMAN",
+      "aliases": [
+        "tanaman"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 56,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Lain di mulut lain di ____",
+      "answer": "HATI",
+      "aliases": [
+        "hati"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 57,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Alah bisa karena ____",
+      "answer": "BIASA",
+      "aliases": [
+        "biasa"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 58,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Tangan di atas lebih baik daripada tangan di ____",
+      "answer": "BAWAH",
+      "aliases": [
+        "bawah"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 59,
+      "category": "Ungkapan",
+      "difficulty": "mudah",
+      "question": "Banyak anak banyak ____",
+      "answer": "REZEKI",
+      "aliases": [
+        "rezeki",
+        "rejeki"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 60,
+      "category": "Ungkapan",
+      "difficulty": "sedang",
+      "question": "Jangan menilai buku dari ____",
+      "answer": "SAMPULNYA",
+      "aliases": [
+        "sampulnya",
+        "covernya",
+        "kulitnya"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 61,
+      "category": "Ungkapan",
+      "difficulty": "sedang",
+      "question": "Pengalaman adalah guru yang paling ____",
+      "answer": "BERHARGA",
+      "aliases": [
+        "berharga",
+        "baik",
+        "terbaik"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 62,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Bagai kerbau dicocok ____",
+      "answer": "HIDUNG",
+      "aliases": [
+        "hidung",
+        "hidungnya"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 63,
+      "category": "Peribahasa",
+      "difficulty": "sedang",
+      "question": "Seperti makan buah ____",
+      "answer": "SIMALAKAMA",
+      "aliases": [
+        "simalakama"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 64,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Menang jadi arang kalah jadi ____",
+      "answer": "ABU",
+      "aliases": [
+        "abu"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 65,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Jauh panggang dari ____",
+      "answer": "API",
+      "aliases": [
+        "api"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 66,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Maksud hati memeluk gunung apa daya tangan tak ____",
+      "answer": "SAMPAI",
+      "aliases": [
+        "sampai"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 67,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Sekali merengkuh dayung dua tiga pulau ____",
+      "answer": "TERLAMPAUI",
+      "aliases": [
+        "terlampaui"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 68,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Berjalan pelihara kaki berkata pelihara ____",
+      "answer": "LIDAH",
+      "aliases": [
+        "lidah"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 69,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Gajah mati meninggalkan gading harimau mati meninggalkan ____",
+      "answer": "BELANG",
+      "aliases": [
+        "belang"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 70,
+      "category": "Peribahasa",
+      "difficulty": "sulit",
+      "question": "Sudah gaharu cendana ____",
+      "answer": "PULA",
+      "aliases": [
+        "pula"
+      ],
+      "dayOfWeek": 6
+    }
+  ],
+  "benarSalah": [
+    {
+      "id": 1,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Matahari terbit dari sebelah timur.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 2,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Ikan bernapas menggunakan paru-paru.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 3,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Indonesia merdeka pada tanggal 17 Agustus 1945.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 4,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Jumlah hari dalam 1 minggu adalah 8 hari.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 5,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Ibu kota negara Indonesia adalah Jakarta.",
+      "answer": "BENAR",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 6,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Buah semangka bagian luarnya berwarna biru.",
+      "answer": "SALAH",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 7,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "1 jam terdiri dari 60 menit.",
+      "answer": "BENAR",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 8,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Kucing termasuk hewan yang bertelur.",
+      "answer": "SALAH",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 9,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Es batu mencair jika diletakkan di tempat panas.",
+      "answer": "BENAR",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 10,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Bendera Indonesia berwarna merah dan kuning.",
+      "answer": "SALAH",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 11,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Paus adalah mamalia laut, bukan ikan.",
+      "answer": "BENAR",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 12,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Laba-laba memiliki 6 buah kaki.",
+      "answer": "SALAH",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 13,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Gunung Everest adalah gunung tertinggi di dunia.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 14,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Tokyo adalah ibu kota negara Korea Selatan.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 15,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Kelelawar adalah satu-satunya mamalia yang bisa terbang.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 16,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Candi Borobudur terletak di Provinsi Jawa Barat.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 17,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Air mendidih pada suhu 100 derajat Celcius.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 18,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Satu tahun kabisat memiliki jumlah hari sebanyak 364 hari.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 19,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Jantung manusia berfungsi untuk memompa darah.",
+      "answer": "BENAR",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 20,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Penguin hidup di kawasan Kutub Utara bersama beruang kutub.",
+      "answer": "SALAH",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 21,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Planet yang paling dekat dengan Matahari adalah Merkurius.",
+      "answer": "BENAR",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 22,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Gajah adalah hewan darat tercepat di dunia.",
+      "answer": "SALAH",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 23,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Garis khatulistiwa melewati kota Pontianak di Indonesia.",
+      "answer": "BENAR",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 24,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Darah di tubuh manusia warnanya selalu biru sebelum terkena udara.",
+      "answer": "SALAH",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 25,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Danau Toba adalah danau vulkanik terbesar di Indonesia.",
+      "answer": "BENAR",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 26,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Menara Eiffel berada di negara Italia.",
+      "answer": "SALAH",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 27,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Bunga raflesia arnoldii berasal dari hutan Bengkulu, Indonesia.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 28,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Saturnus adalah planet terkecil di tata surya kita.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 29,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Komodo adalah kadal terbesar di dunia yang hidup di NTT.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 30,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Sungai Nil merupakan sungai terpanjang di Pulau Kalimantan.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 31,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Satu hari terdiri dari 24 jam.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 32,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Burung unta bisa terbang tinggi di angkasa seperti elang.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 33,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Bulan memancarkan cahayanya sendiri seperti matahari.",
+      "answer": "SALAH",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 34,
+      "category": "Fakta Kilat",
+      "difficulty": "sedang",
+      "question": "Bahasa resmi negara Indonesia adalah Bahasa Indonesia.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 35,
+      "category": "Fakta Kilat",
+      "difficulty": "sulit",
+      "question": "Negara Jepang terletak di Benua Eropa.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 36,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Satu tahun biasa (bukan kabisat) terdiri dari 365 hari.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 37,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Matahari mengelilingi Bumi setiap hari.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 38,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Suhu air membeku menjadi es pada angka 0 derajat Celcius.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 39,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Semut termasuk hewan mamalia yang menyusui anaknya.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 40,
+      "category": "Fakta Kilat",
+      "difficulty": "mudah",
+      "question": "Bendera Indonesia berwarna Merah di bagian atas dan Putih di bawah.",
+      "answer": "BENAR",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 41,
+      "category": "Geografi",
+      "difficulty": "mudah",
+      "question": "Benua terbesar di dunia adalah Benua Asia.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 42,
+      "category": "Geografi",
+      "difficulty": "mudah",
+      "question": "Sungai Amazon mengalir di wilayah Indonesia bagian timur.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 43,
+      "category": "Sains",
+      "difficulty": "mudah",
+      "question": "Tumbuhan membutuhkan sinar matahari untuk melakukan fotosintesis.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 44,
+      "category": "Sains",
+      "difficulty": "mudah",
+      "question": "Manusia dewasa secara normal memiliki sekitar 50 jari tangan dan kaki.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 45,
+      "category": "Hewan",
+      "difficulty": "mudah",
+      "question": "Unta mampu bertahan hidup berhari-hari di gurun pasir tanpa minum.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 46,
+      "category": "Hewan",
+      "difficulty": "mudah",
+      "question": "Ikan hiu bertulang lunak dan bernapas menggunakan paru-paru.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 47,
+      "category": "Indonesia",
+      "difficulty": "mudah",
+      "question": "Pulau Bali sering dijuluki sebagai Pulau Dewata.",
+      "answer": "BENAR",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 48,
+      "category": "Indonesia",
+      "difficulty": "mudah",
+      "question": "Lagu kebangsaan Indonesia Raya diciptakan oleh Ismail Marzuki.",
+      "answer": "SALAH",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 49,
+      "category": "Teknologi",
+      "difficulty": "mudah",
+      "question": "YouTube adalah platform berbagi video terbesar di internet.",
+      "answer": "BENAR",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 50,
+      "category": "Teknologi",
+      "difficulty": "mudah",
+      "question": "Aplikasi Microsoft Excel digunakan khusus untuk mengedit video film bioskop.",
+      "answer": "SALAH",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 51,
+      "category": "Antariksa",
+      "difficulty": "sedang",
+      "question": "Planet Yupiter berukuran jauh lebih besar daripada planet Bumi.",
+      "answer": "BENAR",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 52,
+      "category": "Antariksa",
+      "difficulty": "sedang",
+      "question": "Planet Mars berada lebih dekat ke Matahari daripada planet Bumi.",
+      "answer": "SALAH",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 53,
+      "category": "Fakta Dunia",
+      "difficulty": "sedang",
+      "question": "Tembok Besar terletak di negara Tiongkok (China).",
+      "answer": "BENAR",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 54,
+      "category": "Fakta Dunia",
+      "difficulty": "sedang",
+      "question": "Piramida Giza terletak di negara Yunani.",
+      "answer": "SALAH",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 55,
+      "category": "Olahraga",
+      "difficulty": "sedang",
+      "question": "Satu tim sepak bola yang bermain di lapangan terdiri dari 11 pemain.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 56,
+      "category": "Olahraga",
+      "difficulty": "sedang",
+      "question": "Permainan bola voli menggunakan raket untuk memukul bola melewati net.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 57,
+      "category": "Tubuh Manusia",
+      "difficulty": "sedang",
+      "question": "Tulang paha (femur) adalah tulang terpanjang dan terkuat di tubuh manusia.",
+      "answer": "BENAR",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 58,
+      "category": "Tubuh Manusia",
+      "difficulty": "sedang",
+      "question": "Jantung manusia normal terletak tepat di bagian perut sebelah kanan.",
+      "answer": "SALAH",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 59,
+      "category": "Indonesia",
+      "difficulty": "sedang",
+      "question": "Rendang berasal dari masakan tradisional Minangkabau, Sumatera Barat.",
+      "answer": "BENAR",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 60,
+      "category": "Indonesia",
+      "difficulty": "sedang",
+      "question": "Tari Saman adalah tarian tradisional yang berasal dari Provinsi Papua.",
+      "answer": "SALAH",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 61,
+      "category": "Hewan",
+      "difficulty": "sedang",
+      "question": "Gurita memiliki tiga jantung dan darah yang berwarna kebiruan.",
+      "answer": "BENAR",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 62,
+      "category": "Hewan",
+      "difficulty": "sedang",
+      "question": "Katak hanya mampu hidup di dasar laut dalam bersuhu beku.",
+      "answer": "SALAH",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 63,
+      "category": "Sains",
+      "difficulty": "sedang",
+      "question": "Suara merambat lebih cepat melalui benda padat seperti besi daripada di udara.",
+      "answer": "BENAR",
+      "dayOfWeek": 6
+    },
+    {
+      "id": 64,
+      "category": "Sains",
+      "difficulty": "sedang",
+      "question": "Logam besi tidak dapat ditarik oleh magnet sama sekali.",
+      "answer": "SALAH",
+      "dayOfWeek": 0
+    },
+    {
+      "id": 65,
+      "category": "Geografi",
+      "difficulty": "sulit",
+      "question": "Samudra Pasifik adalah samudra terbesar dan terdalam di planet Bumi.",
+      "answer": "BENAR",
+      "dayOfWeek": 1
+    },
+    {
+      "id": 66,
+      "category": "Geografi",
+      "difficulty": "sulit",
+      "question": "Ibu kota negara Australia adalah Kota Sydney.",
+      "answer": "SALAH",
+      "dayOfWeek": 2
+    },
+    {
+      "id": 67,
+      "category": "Fakta Unik",
+      "difficulty": "sulit",
+      "question": "Sidik jari setiap manusia di dunia berbeda-beda dan unik, termasuk kembar identik.",
+      "answer": "BENAR",
+      "dayOfWeek": 3
+    },
+    {
+      "id": 68,
+      "category": "Fakta Unik",
+      "difficulty": "sulit",
+      "question": "Pisang secara botani termasuk ke dalam jenis umbi-umbian akar seperti singkong.",
+      "answer": "SALAH",
+      "dayOfWeek": 4
+    },
+    {
+      "id": 69,
+      "category": "Sejarah",
+      "difficulty": "sulit",
+      "question": "Teks Proklamasi Kemerdekaan Indonesia diketik oleh Sayuti Melik.",
+      "answer": "BENAR",
+      "dayOfWeek": 5
+    },
+    {
+      "id": 70,
+      "category": "Fakta Dunia",
+      "difficulty": "sulit",
+      "question": "Bahasa resmi utama yang dipakai di negara Brasil adalah Bahasa Jerman.",
+      "answer": "SALAH",
+      "dayOfWeek": 6
+    }
+  ],
+  "battleVoting": [
+    {
+      "id": 1,
+      "category": "Kuliner",
+      "difficulty": "mudah",
+      "question": "Pilih Kubu Favoritmu!",
+      "optionA": "BAKSO 🍲",
+      "optionB": "MIE AYAM 🍜",
+      "aliasesA": [
+        "bakso"
+      ],
+      "aliasesB": [
+        "mie ayam",
+        "mi ayam"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 2,
+      "category": "Debat Nasional",
+      "difficulty": "mudah",
+      "question": "Tim Bubur Ayam Mana Nih?",
+      "optionA": "DIADUK 🥣",
+      "optionB": "TIDAK DIADUK 🥄",
+      "aliasesA": [
+        "diaduk",
+        "aduk"
+      ],
+      "aliasesB": [
+        "tidak diaduk",
+        "ga diaduk",
+        "gak diaduk"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 3,
+      "category": "Minuman",
+      "difficulty": "mudah",
+      "question": "Teman Santai Paling Enak?",
+      "optionA": "KOPI ☕",
+      "optionB": "ES TEH 🧊",
+      "aliasesA": [
+        "kopi"
+      ],
+      "aliasesB": [
+        "es teh",
+        "teh"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 4,
+      "category": "Gaya Hidup",
+      "difficulty": "mudah",
+      "question": "Kamu Tim Mana?",
+      "optionA": "TIM PAGI 🌅",
+      "optionB": "TIM BEGADANG 🌙",
+      "aliasesA": [
+        "pagi",
+        "tim pagi"
+      ],
+      "aliasesB": [
+        "begadang",
+        "tim begadang",
+        "malam"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 5,
+      "category": "Hewan",
+      "difficulty": "mudah",
+      "question": "Lebih Suka Pelihara Apa?",
+      "optionA": "KUCING 🐱",
+      "optionB": "BURUNG 🐤",
+      "aliasesA": [
+        "kucing"
+      ],
+      "aliasesB": [
+        "burung"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 6,
+      "category": "Liburan",
+      "difficulty": "mudah",
+      "question": "Liburan Pilihanmu?",
+      "optionA": "PANTAI 🏖️",
+      "optionB": "GUNUNG ⛰️",
+      "aliasesA": [
+        "pantai"
+      ],
+      "aliasesB": [
+        "gunung"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 7,
+      "category": "Rasa",
+      "difficulty": "mudah",
+      "question": "Suka Makanan yang Mana?",
+      "optionA": "PEDAS 🌶️",
+      "optionB": "MANIS 🍰",
+      "aliasesA": [
+        "pedas"
+      ],
+      "aliasesB": [
+        "manis"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 8,
+      "category": "Makanan",
+      "difficulty": "mudah",
+      "question": "Makan Siang Enaknya?",
+      "optionA": "NASI PADANG 🍛",
+      "optionB": "SATE AYAM 🍢",
+      "aliasesA": [
+        "nasi padang",
+        "padang"
+      ],
+      "aliasesB": [
+        "sate",
+        "sate ayam"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 9,
+      "category": "Cuaca",
+      "difficulty": "mudah",
+      "question": "Lebih Nyaman Cuaca Apa?",
+      "optionA": "HUJAN ADEM 🌧️",
+      "optionB": "CERAH PANAS ☀️",
+      "aliasesA": [
+        "hujan"
+      ],
+      "aliasesB": [
+        "panas",
+        "cerah"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 10,
+      "category": "Gadget",
+      "difficulty": "sedang",
+      "question": "Tim HP Andalanmu?",
+      "optionA": "ANDROID 🤖",
+      "optionB": "IPHONE 🍎",
+      "aliasesA": [
+        "android"
+      ],
+      "aliasesB": [
+        "iphone",
+        "ios"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 11,
+      "category": "Jajanan",
+      "difficulty": "sedang",
+      "question": "Camilan Malam Paling Juara?",
+      "optionA": "MARTABAK MANIS 🥞",
+      "optionB": "MARTABAK TELOR 🍳",
+      "aliasesA": [
+        "martabak manis",
+        "manis"
+      ],
+      "aliasesB": [
+        "martabak telor",
+        "asin",
+        "telor"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 12,
+      "category": "Olahraga",
+      "difficulty": "sedang",
+      "question": "Olahraga Favorit?",
+      "optionA": "SEPAK BOLA ⚽",
+      "optionB": "BADMINTON 🏸",
+      "aliasesA": [
+        "bola",
+        "sepak bola",
+        "futsal"
+      ],
+      "aliasesB": [
+        "badminton",
+        "bulutangkis"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 13,
+      "category": "Hiburan",
+      "difficulty": "sedang",
+      "question": "Lebih Suka Nonton?",
+      "optionA": "FILM KOMEDI 😂",
+      "optionB": "FILM HOROR 👻",
+      "aliasesA": [
+        "komedi",
+        "lucu"
+      ],
+      "aliasesB": [
+        "horor",
+        "hantu"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 14,
+      "category": "Nasi",
+      "difficulty": "sedang",
+      "question": "Sarapan Andalan?",
+      "optionA": "NASI GORENG 🍳",
+      "optionB": "NASI UDUK 🍚",
+      "aliasesA": [
+        "nasi goreng",
+        "nasgor"
+      ],
+      "aliasesB": [
+        "nasi uduk",
+        "uduk"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 15,
+      "category": "Mie",
+      "difficulty": "sedang",
+      "question": "Tim Mie Instan?",
+      "optionA": "MIE GORENG 🍝",
+      "optionB": "MIE KUAH 🍲",
+      "aliasesA": [
+        "mie goreng",
+        "goreng"
+      ],
+      "aliasesB": [
+        "mie kuah",
+        "kuah"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 16,
+      "category": "Buah",
+      "difficulty": "sedang",
+      "question": "Buah Favorit?",
+      "optionA": "MANGGA 🥭",
+      "optionB": "DURIAN 🍈",
+      "aliasesA": [
+        "mangga"
+      ],
+      "aliasesB": [
+        "durian",
+        "duren"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 17,
+      "category": "Transportasi",
+      "difficulty": "sulit",
+      "question": "Perjalanan Jauh Pilih Mana?",
+      "optionA": "KERETA API 🚆",
+      "optionB": "PESAWAT ✈️",
+      "aliasesA": [
+        "kereta",
+        "kereta api"
+      ],
+      "aliasesB": [
+        "pesawat"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 18,
+      "category": "Superpower",
+      "difficulty": "sulit",
+      "question": "Kalau Punya Kekuatan Super?",
+      "optionA": "BISA TERBANG 🦅",
+      "optionB": "MENGHILANG 👻",
+      "aliasesA": [
+        "terbang"
+      ],
+      "aliasesB": [
+        "menghilang",
+        "ilang"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 19,
+      "category": "Maskot",
+      "difficulty": "mudah",
+      "question": "Dukung Maskot Mana Nih?",
+      "optionA": "TUTU KERETA 🚂",
+      "optionB": "PIKO BURUNG 🐤",
+      "aliasesA": [
+        "tutu"
+      ],
+      "aliasesB": [
+        "piko"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 20,
+      "category": "Belanja",
+      "difficulty": "sulit",
+      "question": "Lebih Suka Belanja?",
+      "optionA": "ONLINE SHOP 📱",
+      "optionB": "KE MALL LANGSUNG 🛍️",
+      "aliasesA": [
+        "online"
+      ],
+      "aliasesB": [
+        "mall",
+        "langsung"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 21,
+      "category": "Dessert",
+      "difficulty": "mudah",
+      "question": "Dessert Favoritmu?",
+      "optionA": "ES KRIM 🍦",
+      "optionB": "PUDING 🍮",
+      "aliasesA": [
+        "es krim",
+        "eskrim"
+      ],
+      "aliasesB": [
+        "puding",
+        "agar"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 22,
+      "category": "Mie Instan",
+      "difficulty": "mudah",
+      "question": "Tim Indomie Mana Suaranya?",
+      "optionA": "MIE GORENG 🍳",
+      "optionB": "MIE KUAH SOTO 🍲",
+      "aliasesA": [
+        "goreng",
+        "mie goreng"
+      ],
+      "aliasesB": [
+        "kuah",
+        "mie kuah",
+        "soto"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 23,
+      "category": "Minuman Favorit",
+      "difficulty": "mudah",
+      "question": "Pilih Minuman Peneman Makan!",
+      "optionA": "ES TEH MANIS 🧊",
+      "optionB": "ES JERUK SEGAR 🍊",
+      "aliasesA": [
+        "es teh",
+        "teh"
+      ],
+      "aliasesB": [
+        "es jeruk",
+        "jeruk"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 24,
+      "category": "Game Populer",
+      "difficulty": "mudah",
+      "question": "Battle Game Mabar Terbesar!",
+      "optionA": "MOBILE LEGENDS ⚔️",
+      "optionB": "FREE FIRE 🔥",
+      "aliasesA": [
+        "ml",
+        "mobile legends"
+      ],
+      "aliasesB": [
+        "ff",
+        "free fire"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 25,
+      "category": "Kuliner Pedas",
+      "difficulty": "mudah",
+      "question": "Pilih Ayam Favorit Anak Kost!",
+      "optionA": "AYAM GEPREK 🌶️",
+      "optionB": "AYAM PENYET 🍗",
+      "aliasesA": [
+        "geprek",
+        "ayam geprek"
+      ],
+      "aliasesB": [
+        "penyet",
+        "ayam penyet"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 26,
+      "category": "Jajanan Hits",
+      "difficulty": "mudah",
+      "question": "Battle Jajanan Aci Terenak!",
+      "optionA": "SEBLAK PEDAS 🍲",
+      "optionB": "CILOK BUMBU 🍢",
+      "aliasesA": [
+        "seblak"
+      ],
+      "aliasesB": [
+        "cilok"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 27,
+      "category": "Liburan Impian",
+      "difficulty": "mudah",
+      "question": "Dikasih Tiket Gratis ke Mana?",
+      "optionA": "LIBURAN KE BALI 🏝️",
+      "optionB": "KE JEPANG 🗻",
+      "aliasesA": [
+        "bali"
+      ],
+      "aliasesB": [
+        "jepang"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 28,
+      "category": "Gaya Hidup",
+      "difficulty": "mudah",
+      "question": "Pilih Hobi Penghilang Penat!",
+      "optionA": "MAIN GAME 🎮",
+      "optionB": "NONTON FILM 🎬",
+      "aliasesA": [
+        "game",
+        "main game"
+      ],
+      "aliasesB": [
+        "film",
+        "nonton"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 29,
+      "category": "Kopi Time",
+      "difficulty": "mudah",
+      "question": "Kamu Tim Kopi Yang Mana?",
+      "optionA": "KOPI HITAM ☕",
+      "optionB": "KOPI SUSU AREN 🧋",
+      "aliasesA": [
+        "hitam",
+        "kopi hitam"
+      ],
+      "aliasesB": [
+        "susu",
+        "kopi susu"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 30,
+      "category": "Cemilan",
+      "difficulty": "mudah",
+      "question": "Lagi Santai Enak Ngemil Apa?",
+      "optionA": "KRIPIK PEDAS 🌶️",
+      "optionB": "COKELAT MANIS 🍫",
+      "aliasesA": [
+        "pedas",
+        "kripik"
+      ],
+      "aliasesB": [
+        "cokelat",
+        "coklat"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 31,
+      "category": "Kuliner Jepang",
+      "difficulty": "mudah",
+      "question": "Pilih Makanan Jepang Favorit!",
+      "optionA": "SUSHI 🍣",
+      "optionB": "RAMEN HANGAT 🍜",
+      "aliasesA": [
+        "sushi"
+      ],
+      "aliasesB": [
+        "ramen"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 32,
+      "category": "Tempat Tinggal",
+      "difficulty": "mudah",
+      "question": "Lebih Nyaman Tinggal di Mana?",
+      "optionA": "PEDESAAN ASRI 🌾",
+      "optionB": "KOTA MODERN 🏙️",
+      "aliasesA": [
+        "desa",
+        "pedesaan"
+      ],
+      "aliasesB": [
+        "kota"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 33,
+      "category": "Selera Musik",
+      "difficulty": "mudah",
+      "question": "Lagi Di Jalan Setel Lagu Apa?",
+      "optionA": "MUSIK POP 🎧",
+      "optionB": "DANGDUT KOPLO 💃",
+      "aliasesA": [
+        "pop"
+      ],
+      "aliasesB": [
+        "koplo",
+        "dangdut"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 34,
+      "category": "Nasi Padang",
+      "difficulty": "mudah",
+      "question": "Lauk Wajib Saat Ke Rumah Makan Padang!",
+      "optionA": "RENDANG SAPI 🥩",
+      "optionB": "AYAM POP / GULAI 🍗",
+      "aliasesA": [
+        "rendang"
+      ],
+      "aliasesB": [
+        "ayam pop",
+        "gulai",
+        "ayam"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 35,
+      "category": "Kekuatan Super",
+      "difficulty": "mudah",
+      "question": "Pilih Kekuatan Ajaib Impianmu!",
+      "optionA": "TELEPORTASI ⚡",
+      "optionB": "BACA PIKIRAN 🧠",
+      "aliasesA": [
+        "teleport",
+        "teleportasi"
+      ],
+      "aliasesB": [
+        "baca pikiran",
+        "pikiran"
+      ],
+      "dayOfWeek": 6
+    },
+    {
+      "id": 36,
+      "category": "Waktu Produktif",
+      "difficulty": "mudah",
+      "question": "Pilih Waktu Olahraga Favorit!",
+      "optionA": "OLAHRAGA PAGI ☀️",
+      "optionB": "OLAHRAGA SORE 🌇",
+      "aliasesA": [
+        "pagi"
+      ],
+      "aliasesB": [
+        "sore"
+      ],
+      "dayOfWeek": 0
+    },
+    {
+      "id": 37,
+      "category": "Tontonan",
+      "difficulty": "mudah",
+      "question": "Malam Minggu Nonton Apa?",
+      "optionA": "ANIME SERU 🎌",
+      "optionB": "DRAKOR ROMANTIS 💜",
+      "aliasesA": [
+        "anime"
+      ],
+      "aliasesB": [
+        "drakor"
+      ],
+      "dayOfWeek": 1
+    },
+    {
+      "id": 38,
+      "category": "Rasa Manis",
+      "difficulty": "mudah",
+      "question": "Pilih Rasa Es Krim Terenak!",
+      "optionA": "COKELAT PEKAT 🍫",
+      "optionB": "STROBERI SEGAR 🍓",
+      "aliasesA": [
+        "cokelat",
+        "coklat"
+      ],
+      "aliasesB": [
+        "stroberi"
+      ],
+      "dayOfWeek": 2
+    },
+    {
+      "id": 39,
+      "category": "Membaca",
+      "difficulty": "mudah",
+      "question": "Lebih Suka Baca Pakai Apa?",
+      "optionA": "BUKU CETAK 📖",
+      "optionB": "BACA DI HP 📱",
+      "aliasesA": [
+        "buku"
+      ],
+      "aliasesB": [
+        "hp",
+        "ebook"
+      ],
+      "dayOfWeek": 3
+    },
+    {
+      "id": 40,
+      "category": "Cuaca",
+      "difficulty": "mudah",
+      "question": "Pilih Musim Favorit Buat Jalan!",
+      "optionA": "CERAH BERAWAN 🌤️",
+      "optionB": "SEJUK BERANGIN 🍃",
+      "aliasesA": [
+        "cerah"
+      ],
+      "aliasesB": [
+        "sejuk",
+        "angin"
+      ],
+      "dayOfWeek": 4
+    },
+    {
+      "id": 41,
+      "category": "Pagi Hari",
+      "difficulty": "mudah",
+      "question": "Sarapan Cepat Paling Favorit!",
+      "optionA": "BUBUR AYAM 🥣",
+      "optionB": "ROTI BAKAR 🍞",
+      "aliasesA": [
+        "bubur"
+      ],
+      "aliasesB": [
+        "roti"
+      ],
+      "dayOfWeek": 5
+    },
+    {
+      "id": 42,
+      "category": "Masa Hidup",
+      "difficulty": "mudah",
+      "question": "Pilih Mesin Waktu ke Mana?",
+      "optionA": "KEMBALI MASA LALU ⏪",
+      "optionB": "LIHAT MASA DEPAN ⏩",
+      "aliasesA": [
+        "masa lalu",
+        "lalu"
+      ],
+      "aliasesB": [
+        "masa depan",
+        "depan"
+      ],
+      "dayOfWeek": 6
+    }
+  ]
+}
